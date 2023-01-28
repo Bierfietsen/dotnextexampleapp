@@ -3,7 +3,7 @@ using SpoRE.Models.Settings;
 using SpoRE.Setup;
 
 var builder = WebApplication.CreateBuilder(args);
-
+//
 // Add services to the container.
 
 builder.Services.AddControllersWithViews();
