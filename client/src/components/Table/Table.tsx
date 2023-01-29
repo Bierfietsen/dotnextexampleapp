@@ -14,9 +14,9 @@ interface Header {
     // in data of header gaat het aan union type Supported Table cell moeten voldoen
 }
 
-export interface Row {
-
-}
+export type Row = {
+    [key: TableInput['headers'][number]['name']]: string|number
+};
 
 const Table = (input: TableInput) => {
 
@@ -42,9 +42,7 @@ const BuildBody = (input: TableInput): JSX.Element[] => { // TODO merge met Conv
 const ConvertDataToRow = (row: Row, headers: Header[], index: number): JSX.Element => {
     var cells = [];
     for (var header of headers) {
-        type ObjectKey = keyof typeof row;
-        const myVar = header.name as ObjectKey;
-        var data = row[myVar];
+        var data = row[header.name];
         // var type = typeof data === 'object' ? data.type : typeof data;
         cells.push(BuildCell(header.name, data, index))
     }
