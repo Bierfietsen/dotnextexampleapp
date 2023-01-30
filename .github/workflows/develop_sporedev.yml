@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'SpoReDev'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A92A36CD27874939977C76F5E0924E3E }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_2338027F916C4490B9E7FC1E696B2230 }}
           package: .
