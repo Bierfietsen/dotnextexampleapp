@@ -15,7 +15,7 @@ interface Header {
 }
 
 export type Row = {
-    [key: TableInput['headers'][number]['name']]: string|number
+    [key: TableInput['headers'][number]['name']]: any
 };
 
 const Table = (input: TableInput) => {
@@ -49,7 +49,7 @@ const ConvertDataToRow = (row: Row, headers: Header[], index: number): JSX.Eleme
     return <tr key={index}>{cells}</tr>
 }
 
-const BuildCell = (name: string, data: Row, index: number) => { //TODO dit moet niet met een switch maar met automatische types
+const BuildCell = (name: string, data: any, index: number) => { //TODO dit moet niet met een switch maar met automatische types
     switch (name) {
         case "stagePosition":
             return <td key={index + name}>{data.toString() + "e"}</td>

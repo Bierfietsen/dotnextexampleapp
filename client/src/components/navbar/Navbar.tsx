@@ -2,11 +2,8 @@ import { Link } from 'react-router-dom';
 import './navbar.css';
 import StatsDropdown from './Dropdowns/StatistiekenDropdown'
 import ChartsDropdown from './Dropdowns/ChartsDropdown';
-import SettingsDropdown from './Dropdowns/Settings'
-import MobileDropdown from './Dropdowns/Mobile'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faBicycle, faLaptop, faShieldAlt, faUser } from "@fortawesome/free-solid-svg-icons";
-import { SRELogo } from '../shared/svg/all-icons.js'
+import { faLaptop, faShieldAlt, faUser } from "@fortawesome/free-solid-svg-icons";
 // import BudgetSwitchButton from './budgetSwitchButton';
 // import FabFourSwitchButton from './fabFourSwitchButton';
 // import jwt_decode from "jwt-decode";

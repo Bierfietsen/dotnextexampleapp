@@ -5,7 +5,6 @@ const DesignSandbox = () => {
     <div style={{paddingLeft: "50px"}}>
       <Button
         action={()=>{return 0;}}
-        type=''
         label='Button'
       />
     </div>
